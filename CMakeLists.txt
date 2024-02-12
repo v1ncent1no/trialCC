@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.20)
+project(trial)
+
+SET(CMAKE_CXX_STANDARD 20)
+SET(CMAKE_CXX_STANDARD_REQUIRED TRUE)
+
+file(GLOB SRC_FILES CONFIGURE_DEPENDS "src/*.cc")
+
+add_executable(${PROJECT_NAME} ${SRC_FILES})
